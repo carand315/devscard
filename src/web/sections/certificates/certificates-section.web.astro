@@ -1,0 +1,17 @@
+---
+import type { CertificatesSection } from '@/types/sections/certificates-section-types';
+import DividedList from '@/web/components/divided-list.astro';
+import Divider from '@/web/components/divider.astro';
+import SectionCard from '@/web/components/section-card.astro';
+import Certificate from './certificate.astro';
+
+export interface Props extends CertificatesSection {}
+
+const { config, certificates } = Astro.props;
+---
+
+<SectionCard {...config}>
+  <DividedList>
+    {certificates.flatMap((certificate) => [<Certificate {...certificate} />, <Divider />])}
+  </DividedList>
+</SectionCard>

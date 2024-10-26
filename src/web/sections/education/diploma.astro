@@ -1,24 +1,28 @@
 ---
+import config from '@/data/config';
 import type { Diploma } from '@/types/sections/education-section.types';
 import Description from '@/web/components/description.astro';
 import LinkButton from '@/web/components/link-button.astro';
 import Thumbnail from '@/web/components/thumbnail.astro';
-import Timestamp from '@/web/components/timestamp.astro';
 import Typography from '@/web/components/typography.astro';
+import { format } from 'date-fns';
 
 export interface Props extends Diploma {}
 
-const { title, institution, dates, description, links, image } = Astro.props;
+const { locale, dateFormat } = config.i18n;
+const { title, institution, date, description, links, image } = Astro.props;
 ---
 
 <div class="flex flex-col gap-3">
   <div class="flex w-full justify-between gap-2">
     <div class="flex gap-4">
       <Thumbnail src={image} alt={`${institution} logo`} size="large" />
-      <div class="flex flex-col">
+      <div class="mt-3 flex flex-col">
         <Typography variant="item-title">{title}</Typography>
         <Typography variant="item-subtitle-primary" class="mb-0.5">{institution}</Typography>
-        <Timestamp dates={dates} />
+        <Typography variant="item-subtitle-secondary">
+          {format(date, dateFormat, { locale })}
+        </Typography>
       </div>
     </div>
     {

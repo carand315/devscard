@@ -164,3 +164,86 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+export const dotnet = createSkillFactory({
+  name: '.NET',
+  icon: 'logos:dotnet',
+  iconColor: '#4FC08D'
+});
+
+export const angular = createSkillFactory({
+  name: 'Angular',
+  icon: 'logos:angular-icon',
+  iconColor: '#4FC08D'
+});
+
+export const azure = createSkillFactory({
+  name: 'Azure',
+  icon: 'logos:azure-icon',
+  iconColor: '#4FC08D'
+});
+
+export const googleMaps = createSkillFactory({
+  name: 'Google Maps API',
+  icon: 'logos:google-maps',
+  iconColor: '#4FC08D'
+});
+
+export const chartJs = createSkillFactory({
+  name: 'ChartJS',
+  icon: 'logos:chartjs',
+  iconColor: '#4FC08D'
+});
+
+export const sql = createSkillFactory({
+  name: 'SQL Server',
+  icon: 'devicon:azuresqldatabase',
+  iconColor: '#4FC08D'
+});
+
+export const csharp = createSkillFactory({
+  name: 'C#',
+  icon: 'devicon:csharp',
+  iconColor: '#4FC08D'
+});
+
+export const webApi = createSkillFactory({
+  name: 'Rest API',
+  icon: 'devicon:swagger',
+  iconColor: '#4FC08D'
+});
+
+export const git = createSkillFactory({
+  name: 'Git',
+  icon: 'devicon:git',
+  iconColor: '#4FC08D'
+});
+
+export const unitTesting = createSkillFactory({
+  name: 'Unit Testing',
+  icon: 'fluent-mdl2:test-beaker-solid',
+  iconColor: '#4FC08D'
+});
+
+export const docker = createSkillFactory({
+  name: 'Docker',
+  icon: 'logos:docker-icon'
+});
+
+export const cdCi = createSkillFactory({
+  name: 'CI/CD',
+  icon: 'clarity:ci-cd-line',
+  iconColor: '#0089d6'
+});
+
+export const agile = createSkillFactory({
+  name: 'Agile',
+  icon: 'iconoir:agile',
+  iconColor: '#5ec7d3'
+});
+
+export const pms = createSkillFactory({
+  name: 'Jira',
+  icon: 'devicon:jira-wordmark',
+  iconColor: '#5ec7d3'
+});

@@ -1,18 +1,15 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
+import { website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
-  firebase,
-  nextJs,
-  nx,
-  pnpm,
-  react,
-  reactQuery,
-  tailwindCss,
-  typescript,
+  angular,
+  azure,
+  csharp,
+  docker,
+  git,
+  sql,
   vue,
+  webApi
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -24,59 +21,54 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      role: '.NET & Angular Developer Full Stack Developer',
+      company: 'FPT Software',
+      image: import('@/assets/logos/fpt.png'),
+      dates: [new Date('2021-10'), new Date('2024-02')],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+        - Migrating Angular version from v8 to 11v for web software insurance application.
+        - Developing new features using .NET for the backend side and Angular for SPA.
+        - Resolving bugs on different parts of the application including Store Procedures.
+        - Attending Scrum meetings.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
+        tags: [csharp(), angular(), webApi(), sql(), azure(), docker()],
       },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
+      links: [website({ url: 'https://fptsoftware.com' })],
     },
     {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
+      role: '.NET Full Stack Developer',
+      company: 'Gorilla Logic',
+      image: import('@/assets/logos/gorilla.png'),
+      dates: [new Date('2020-09'), new Date('2021-09')],
       description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
+        - Software Developer in Young Living project. Using NET Core and Angular Building WebAPI using a microservices architecture.
+        - Resolving bugs and maintenance of a virtual shopping application.
+        - Developing new features using AngularJS
+        - Attending Scrum meetings
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
+        tags: [csharp(), angular(), webApi(), sql(), git()]
       },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
+      links: [website({ url: 'https://gorillalogic.com' })],
     },
     {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
+      role: 'Semi-Senior Software .NET Developer',
+      company: 'Globant',
+      image: import('@/assets/logos/globant.png'),
+      dates: [new Date('2019-08'), new Date('2020-08')],
       description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-        Donec non vulputate augue 🤓
+        - Software Developer in Investment project. Using NET Core and Vue.js with CSS. WebAPI’s + EF and XUnit.
+        - Coordinating the work of the team (3 developers and 1 QA).
+        - Reviewing and approving Pull Requests
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        tags: [csharp(), vue(), webApi(), sql()]
       },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [website({ url: 'https://www.globant.com/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

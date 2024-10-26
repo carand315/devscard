@@ -1,77 +1,121 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import {
-  apolloGraphql,
-  astro,
-  chakraUi,
-  cypress,
-  eslint,
-  firebase,
-  mongoDb,
-  nestJs,
-  pnpm,
-  postgreSql,
-  prettier,
-  react,
+  agile,
+  angular,
+  azure,
+  cdCi,
+  chartJs,
+  csharp,
+  docker,
+  dotnet,
+  git,
+  googleMaps,
+  pms,
   sass,
-  supabase,
-  tailwindCss,
+  sql,
   typescript,
+  unitTesting,
+  webApi
 } from '../helpers/skills';
 
 const skillsSectionData = {
   config: {
     title: 'Skills',
     slug: 'skills',
-    icon: 'fa6-solid:bars-progress',
+    icon: 'gravity-ui:curly-brackets',
     visible: true,
   },
   skillSets: [
     {
-      title: 'I already know',
+      title: '',
       skills: [
-        react({
+        dotnet({
           level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+          description: 'Including NET Core'
+        }),
+        // react({
+        //   level: 5,
+        //   description:
+        //     'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+        // }),
+        angular({
+          level: 5
         }),
         typescript({
-          level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          level: 3
         }),
         sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
+          level: 3
         }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
+        googleMaps({
+          level: 3
         }),
-        nestJs({
+        chartJs({
+          level: 3
+        }),
+        webApi({
+          level: 5
+        }),
+        azure({
           level: 3,
-          description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+          description: 'Including Azure DevOps'
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+        sql({
+          level: 4
+        }),
+        csharp({
+          level: 5
+        }),
+        docker({
+          level: 2
+        }),
+        unitTesting({
+          level: 4
+        }),
+        cdCi({
+          level: 3
+        }),
+        git({
+          level: 5,
+          description: 'GitHub, GitLab, Bitbucket, Azure DevOps, etc.'
+        }),
+        agile({
+          level: 5
+        }),
+        pms({
+          level: 4,
+          description: 'Project Management Software'
+        }),
+        // chakraUi({ level: 5 }),
+        // tailwindCss({ level: 3 }),
+        // prettier({ level: 5 }),
+        // eslint({
+        //   level: 4,
+        //   description:
+        //     'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
+        // }),
+        // nestJs({
+        //   level: 3,
+        //   description:
+        //     'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+        // }),
+        // postgreSql({ level: 2 }),
+        // mongoDb({ level: 1 }),
+        // firebase({ level: 1 }),
+        // pnpm({ level: 3 }),
       ],
     },
-    {
-      title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
-    },
+    // {
+    //   title: 'I want to learn',
+    //   skills: [apolloGraphql(), astro(), supabase(), cypress()],
+    // },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:co', name: 'Spanish - Native' },
+        { icon: 'circle-flags:us', name: 'English - B1' },
+        { icon: 'game-icons:spiked-dragon-head', iconColor: 'brown', name: 'High Valyrian - A1' }
       ],
     },
   ],

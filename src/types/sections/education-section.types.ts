@@ -23,7 +23,8 @@ export interface Diploma {
   /**
    * Date range when you were studying in the institution.
    */
-  dates: DateRange;
+  dates?: DateRange;
+  date: Date;
 
   /**
    * A short overview of your studies. You can use markdown syntax.

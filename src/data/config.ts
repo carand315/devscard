@@ -11,10 +11,10 @@ const config = {
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
+    title: 'Carlos Bermudez - Senior Full Stack Web Developer | Angular & .NET',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
-    faviconPath: '/src/assets/my-image.jpeg',
+      'Full Stack Developer with +10 years of experience in software products development with the measure focused on Microsoft .NET technologies and Angular Framework, achieving the MCP (Microsoft Certified Professional)',
+    faviconPath: '/src/assets/profile.png',
   },
   pdf: {
     footer:

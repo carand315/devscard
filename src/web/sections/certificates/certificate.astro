@@ -1,0 +1,28 @@
+---
+import config from '@/data/config';
+import type { Certificate } from '@/types/sections/certificates-section-types';
+import Thumbnail from '@/web/components/thumbnail.astro';
+import Typography from '@/web/components/typography.astro';
+import { format } from 'date-fns';
+
+export interface Props extends Certificate {}
+
+const { locale, dateFormat } = config.i18n;
+const { title, image, company, issued, id } = Astro.props;
+---
+
+<div class="flex flex-col">
+  <div class="flex w-full justify-between gap-2">
+    <div class="flex gap-4">
+      <Thumbnail src={image} alt={`${company} logo`} size="large" />
+      <div class="mt-4 flex flex-col">
+        <Typography variant="item-title">{title}</Typography>
+        <Typography variant="item-subtitle-primary" class="mb-0.5">{company}</Typography>
+        <Typography variant="item-subtitle-secondary">
+          {format(issued, dateFormat, { locale })}
+        </Typography>
+        <Typography variant="item-subtitle-secondary">{id}</Typography>
+      </div>
+    </div>
+  </div>
+</div>
