@@ -10,7 +10,7 @@ import Typography from '@/web/components/typography.astro';
 
 export interface Props extends MainSection {}
 
-const { config, description, details, fullName, image, links, role, tags } = Astro.props;
+const { config, description, details, fullName, image, links, role, tags, cert } = Astro.props;
 ---
 
 <SectionCard {...config} hideTitle>
@@ -23,12 +23,7 @@ const { config, description, details, fullName, image, links, role, tags } = Ast
         height={320}
         class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
       />
-      <Photo
-        alt={fullName}
-        height={150}
-        class="sm:w-30 w-36 max-w-none rounded-lg md:w-52"
-        src="/src/assets/logos/certified.png"
-      />
+      <Photo alt={fullName} height={150} class="sm:w-30 w-36 max-w-none rounded-lg md:w-52" src={cert} />
       <!-- <DownloadButton {...action} /> -->
     </div>
     <div class="flex w-full flex-col gap-5">

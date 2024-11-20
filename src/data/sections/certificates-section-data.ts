@@ -21,7 +21,7 @@ const certificatesSectionData = {
       company: 'certificates.dev',
       image: import('@/assets/logos/angular-badge.png'),
       issued: new Date('2024.10'),
-      id: 'Credential ID C3199C9B7576A064'
+      id: 'Credential ID 9d588428-a13d-48c3-8d80-b5a919a52589'
     },
     {
       title: 'Azure Fundamentals',
@@ -44,12 +44,6 @@ const certificatesSectionData = {
       issued: new Date('2017.01'),
       id: 'Credential ID 311202-07'
     },
-    // {
-    //   title: 'CCNA Exploration: Network Fundamentals',
-    //   company: 'Cisco',
-    //   image: import('@/assets/logos/cisco.png'),
-    //   issued: new Date('2012-12')
-    // },
     {
       title: 'B1 Intermediate',
       company: 'American & British Academy',

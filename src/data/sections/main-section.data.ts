@@ -10,6 +10,7 @@ const mainSectionData = {
     visible: true,
   },
   image: import('@/assets/profile.png'),
+  cert: import('@/assets/logos/certified.png'),
   fullName: 'Carlos Bermudez',
   role: 'Senior Full Stack Web Developer | Angular & .NET',
   details: [
