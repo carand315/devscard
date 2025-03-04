@@ -21,7 +21,24 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: '.NET & Angular Developer Full Stack Developer',
+      role: '.NET & Angular Full Stack Developer',
+      company: 'Unosquare',
+      image: import('@/assets/logos/unosquare.png'),
+      dates: [new Date('2024-09'), null],
+      description: `
+        - Developing new features using .NET for the backend side and Angular for SPA.
+        - Creating and designing unit test for frontend side with 80% of code coverage.
+        - Building and deploying feature branches in dev and qa environments.
+        - Attending Scrum meetings.
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [csharp(), angular(), webApi(), sql(), azure()],
+      },
+      links: [website({ url: 'https://www.unosquare.com' })],
+    },
+    {
+      role: '.NET & Angular Full Stack Developer',
       company: 'FPT Software',
       image: import('@/assets/logos/fpt.png'),
       dates: [new Date('2021-10'), new Date('2024-02')],

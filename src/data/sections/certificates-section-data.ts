@@ -10,12 +10,13 @@ const certificatesSectionData = {
     visible: true,
   },
   certificates: [
-    // {
-    //   title: 'Microsoft Certified Professional',
-    //   company: 'Microsoft',
-    //   image: import('@/assets/logos/microsoft.png'),
-    //   issued: new Date('2014-12')
-    // },
+    {
+      title: 'Senior Angular Developer',
+      company: 'certificates.dev',
+      image: import('@/assets/logos/angular-senior.png'),
+      issued: new Date('2025.03'),
+      id: 'Credential ID 9e58927d-e776-4284-9b08-df36ab9f07d9'
+    },
     {
       title: 'Mid-Level Angular Developer',
       company: 'certificates.dev',

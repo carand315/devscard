@@ -24,7 +24,7 @@ const educationSectionData = {
       image: import('@/assets/logos/tc.png'),
       date: new Date('2018.06'),
       description: "",
-      links: [website({ url: '#' })],
+      links: [website({ url: 'https://tecnologicocomfenalco.edu.co/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<EducationSection>;
